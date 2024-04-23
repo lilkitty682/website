@@ -15,11 +15,19 @@
 <script>
     //github is being unsigma and its being really anoying to update javascript files so i have to put it in the html file
     const body = document.body
+    var green = false;
     function sigma() {
         alert("1. The Article primarily discusses __________. A:how a young inventor became an Internet sensation, inspiring the next generation of changemakers this is all i got so far website still in development");
     }
     function settings() {
-        body.style.backgroundColor = "green";
+        if (!green) {
+            body.style.backgroundColor = "green";
+            green = true
+        }
+        if (green) {
+            body.style.backgroundColor = "white";
+            green = false
+        }
     }
 </script>
 <style>
